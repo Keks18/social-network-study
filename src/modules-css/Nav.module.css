@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 100%;
+  background-color: rgb(21, 87, 96);
+}
+
+.item a {
+  color: aliceblue;
+}
+
+.col {
+  flex: 1 1 auto;
+}
+
+.item {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(41, 34, 34);
+}
+
+.item:not(:last-child) {
+  flex: 1 1 auto;
+  margin-bottom: 10px;
+}

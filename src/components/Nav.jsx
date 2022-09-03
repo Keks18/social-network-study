@@ -1,14 +1,16 @@
+import s from "../modules-css/Nav.module.css";
+
 const Nav = () => {
   return (
-    <nav className="nav main__nav">
-      <div className="nav__col">
-        <div className="nav__item">
+    <nav className={s.nav}>
+      <div className={s.col}>
+        <div className={s.item}>
           <a href="#s">Profile</a>
         </div>
-        <div className="nav__item">
+        <div className={s.item}>
           <a href="#s">Contacts</a>
         </div>
-        <div className="nav__item">
+        <div className={s.item}>
           <a href="#s">Messages</a>
         </div>
       </div>

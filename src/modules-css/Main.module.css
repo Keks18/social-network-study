@@ -1,0 +1,9 @@
+.main {
+  flex: 1 1 auto;
+}
+
+.row {
+  display: flex;
+  max-width: 1080px;
+  min-height: 100%;
+}
