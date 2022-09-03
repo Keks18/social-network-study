@@ -1,6 +1,6 @@
-import Nav from "./Nav";
-import Profile from "./Profile";
-import s from "../modules-css/Main.module.css";
+import s from "./Main.module.css";
+import Nav from "../Nav/Nav";
+import Profile from "../Profile/Profile";
 
 const Main = () => {
   return (
