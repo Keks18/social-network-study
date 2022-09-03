@@ -22,6 +22,11 @@
   color: rgb(41, 34, 34);
 }
 
+.hover:hover {
+  color: rgb(249, 182, 0);
+  transition: .2s;
+}
+
 .item:not(:last-child) {
   flex: 1 1 auto;
   margin-bottom: 10px;
