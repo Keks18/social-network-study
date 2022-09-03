@@ -1,5 +1,5 @@
 .post {}
 
-.new__post {}
-
-.item {}
+.new__post {
+  margin-bottom: 15px;
+}
