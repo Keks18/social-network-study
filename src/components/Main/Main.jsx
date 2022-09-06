@@ -2,6 +2,7 @@ import s from "./Main.module.css";
 import Nav from "../Nav/Nav";
 import Profile from "../Profile/Profile";
 import Dialogs from "../Dialogs/Dialogs";
+import { Routes, Route } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -9,9 +10,11 @@ const Main = () => {
       <div className="container">
         <div className={s.row}>
           <Nav />
-          {/* <Profile /> */}
           <div className={s.main_content}>
-            <Dialogs />
+            <Routes>
+              <Route path="/dialogs" element={<Dialogs />} />
+              <Route path="/profile" element={<Profile />} />
+            </Routes>
           </div>
         </div>
       </div>

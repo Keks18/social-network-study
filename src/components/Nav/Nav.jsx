@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import s from "./Nav.module.css";
 
 const Nav = () => {
@@ -5,19 +6,14 @@ const Nav = () => {
     <nav className={s.nav}>
       <div className={s.col}>
         <div className={`${s.item}`}>
-          <a className={s.hover} href="#s">
+          <Link to="/profile" className={s.hover}>
             Profile
-          </a>
+          </Link>
         </div>
         <div className={s.item}>
-          <a className={s.hover} href="#s">
-            Contacts
-          </a>
-        </div>
-        <div className={s.item}>
-          <a className={s.hover} href="#s">
+          <Link to="/dialogs" className={s.hover}>
             Messages
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
