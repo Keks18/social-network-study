@@ -1,13 +1,3 @@
-.content {
-  display: flex;
-  flex-direction: column;
-  min-width: 100%;
-  min-height: calc(100vh - 65.63px);
-  overflow-wrap: break-word;
-  padding: 15px 30px;
-  background-color: aliceblue;
-}
-
 .profile {
   display: flex;
   max-width: 100%;

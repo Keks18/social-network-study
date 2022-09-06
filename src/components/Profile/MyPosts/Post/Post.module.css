@@ -1,8 +1,14 @@
 .item {
   margin-bottom: 15px;
+  display: flex;
 }
 
 .item img {
   width: 50px;
   border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name {
+  margin-bottom: 10px;
 }

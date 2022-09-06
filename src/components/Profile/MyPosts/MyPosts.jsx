@@ -11,10 +11,10 @@ const MyPosts = () => {
         <button>remove</button>
       </div>
       <div className={s.new__post}>new post</div>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <Post name="Max" age="22" count="11" />
+      <Post name="Nick" age="25" count="22" />
+      <Post name="Alice" age="21" count="33" />
+      <Post name="Lox" age="56" count="44" />
     </div>
   );
 };

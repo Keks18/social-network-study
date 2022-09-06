@@ -1,6 +1,7 @@
 import s from "./Main.module.css";
 import Nav from "../Nav/Nav";
 import Profile from "../Profile/Profile";
+import Dialogs from "../Dialogs/Dialogs";
 
 const Main = () => {
   return (
@@ -8,7 +9,10 @@ const Main = () => {
       <div className="container">
         <div className={s.row}>
           <Nav />
-          <Profile />
+          {/* <Profile /> */}
+          <div className={s.main_content}>
+            <Dialogs />
+          </div>
         </div>
       </div>
     </div>
