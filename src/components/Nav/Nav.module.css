@@ -23,11 +23,15 @@
 }
 
 .hover:hover {
-  color: rgb(249, 182, 0);
+  color: rgb(187, 218, 160);
   transition: .2s;
 }
 
 .item:not(:last-child) {
   flex: 1 1 auto;
   margin-bottom: 10px;
+}
+
+.item a.active {
+  color: rgb(249, 182, 0);
 }

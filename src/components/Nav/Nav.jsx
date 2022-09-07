@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import s from "./Nav.module.css";
 
 const Nav = () => {
@@ -6,14 +6,54 @@ const Nav = () => {
     <nav className={s.nav}>
       <div className={s.col}>
         <div className={`${s.item}`}>
-          <Link to="/profile" className={s.hover}>
+          <NavLink
+            to="/profile"
+            className={(navData) =>
+              s.hover + " " + (navData.isActive ? s.active : s.item)
+            }
+          >
             Profile
-          </Link>
+          </NavLink>
         </div>
         <div className={s.item}>
-          <Link to="/dialogs" className={s.hover}>
+          <NavLink
+            to="/dialogs"
+            className={(navData) =>
+              s.hover + " " + (navData.isActive ? s.active : s.item)
+            }
+          >
             Messages
-          </Link>
+          </NavLink>
+        </div>
+        <div className={s.item}>
+          <NavLink
+            to="/news"
+            className={(navData) =>
+              s.hover + " " + (navData.isActive ? s.active : s.item)
+            }
+          >
+            News
+          </NavLink>
+        </div>
+        <div className={s.item}>
+          <NavLink
+            to="/music"
+            className={(navData) =>
+              s.hover + " " + (navData.isActive ? s.active : s.item)
+            }
+          >
+            Music
+          </NavLink>
+        </div>
+        <div className={s.item}>
+          <NavLink
+            to="/settings"
+            className={(navData) =>
+              s.hover + " " + (navData.isActive ? s.active : s.item)
+            }
+          >
+            Settings
+          </NavLink>
         </div>
       </div>
     </nav>
