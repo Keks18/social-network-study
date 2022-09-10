@@ -8,7 +8,9 @@
   margin-right: 50px;
 }
 
-.dialog {}
+.dialog {
+  margin-bottom: 15px;
+}
 
 .messages {}
 

@@ -15,7 +15,7 @@ const Main = () => {
           <Nav />
           <div className={s.main_content}>
             <Routes>
-              <Route path="/dialogs" element={<Dialogs />} />
+              <Route path="/dialogs*" element={<Dialogs />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/news" element={<News />} />
               <Route path="/music" element={<Music />} />

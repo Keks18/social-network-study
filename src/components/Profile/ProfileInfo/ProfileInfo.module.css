@@ -1,0 +1,14 @@
+.profile {
+  display: flex;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 100px;
+  margin-right: 15px;
+}
+
+.profile__content {}
+
+.profile__description {}
