@@ -1,0 +1,15 @@
+.dialogs {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.dialogs__item {
+  margin-right: 50px;
+}
+
+.dialog {}
+
+.messages {}
+
+.messsage {}
