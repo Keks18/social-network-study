@@ -8,7 +8,7 @@ const Post = (props) => {
         <div className={s.name}>
           {props.name}, {props.age}
         </div>
-        <span>likes {props.count}</span>
+        <span>likes {props.likes}</span>
       </div>
     </div>
   );
