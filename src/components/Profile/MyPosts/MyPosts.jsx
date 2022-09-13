@@ -9,6 +9,10 @@ const MyPosts = () => {
     { name: "Alex", age: "56", likes: "44", id: 4 },
   ];
 
+  let postsElement = postsData.map((el) => (
+    <Post name={el.name} age={el.age} likes={el.likes} id={el.id} />
+  ));
+
   return (
     <div className={s.post}>
       post
@@ -18,30 +22,10 @@ const MyPosts = () => {
         <button>remove</button>
       </div>
       <div className={s.new__post}>new post</div>
-      <Post
-        name={postsData[0].name}
-        age={postsData[0].age}
-        likes={postsData[0].likes}
-        id={postsData[0].id}
-      />
-      <Post
-        name={postsData[1].name}
-        age={postsData[1].age}
-        likes={postsData[1].likes}
-        id={postsData[1].id}
-      />
-      <Post
-        name={postsData[2].name}
-        age={postsData[2].age}
-        likes={postsData[2].likes}
-        id={postsData[2].id}
-      />
-      <Post
-        name={postsData[3].name}
-        age={postsData[3].age}
-        likes={postsData[3].likes}
-        id={postsData[3].id}
-      />
+      {postsElement[0]}
+      {postsElement[1]}
+      {postsElement[2]}
+      {postsElement[3]}
     </div>
   );
 };
