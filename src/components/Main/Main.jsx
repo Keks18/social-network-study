@@ -7,7 +7,7 @@ import Music from "./Music/Music";
 import Settings from "./Settings/Settings";
 import Nav from "./Nav/Nav";
 
-const Main = () => {
+const Main = (props) => {
   return (
     <div className={s.main}>
       <div className="container">
@@ -15,8 +15,19 @@ const Main = () => {
           <Nav />
           <div className={s.main_content}>
             <Routes>
-              <Route path="/dialogs/*" element={<Dialogs />} />
-              <Route path="/profile" element={<Profile />} />
+              <Route
+                path="/dialogs/*"
+                element={
+                  <Dialogs
+                    dialogsData={props.dialogsData}
+                    messagesData={props.messagesData}
+                  />
+                }
+              />
+              <Route
+                path="/profile"
+                element={<Profile data={props.postsData} />}
+              />
               <Route path="/news" element={<News />} />
               <Route path="/music" element={<Music />} />
               <Route path="/settings" element={<Settings />} />
