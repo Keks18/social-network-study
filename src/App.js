@@ -6,11 +6,7 @@ const App = (props) => {
   return (
     <div className="wrapper">
       <Header />
-      <Main
-        postsData={props.postsData}
-        dialogsData={props.dialogsData}
-        messagesData={props.messagesData}
-      />
+      <Main data={props.data} />
     </div>
   );
 };

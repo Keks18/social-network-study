@@ -2,7 +2,6 @@ import DialogItem from "./DialogItem/DialogsItem";
 import s from "./Dialogs.module.css";
 import Message from "./Message/Message";
 const Dialogs = (props) => {
-  console.log(props);
   let dialogsElements = props.dialogsData.map((el) => (
     <DialogItem name={el.name} id={el.id} />
   ));
