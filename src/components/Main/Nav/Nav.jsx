@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
+import Friends from "./Friends/Friends";
 import s from "./Nav.module.css";
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav className={s.nav}>
       <div className={s.col}>
@@ -55,6 +56,7 @@ const Nav = () => {
             Settings
           </NavLink>
         </div>
+        <Friends data={props.data.friendsData} />
       </div>
     </nav>
   );

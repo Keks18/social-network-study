@@ -1,4 +1,11 @@
 let state = {
+  sideBar: {
+    friendsData: [
+      { name: "Leha", avatar: "url123", id: 1 },
+      { name: "Vlad", avatar: "url123", id: 2 },
+      { name: "Nick", avatar: "url123", id: 3 },
+    ],
+  },
   postsData: [
     { name: "Max", age: "22", likes: "11", id: 1 },
     { name: "Nick", age: "25", likes: "22", id: 2 },

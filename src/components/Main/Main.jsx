@@ -12,7 +12,7 @@ const Main = (props) => {
     <div className={s.main}>
       <div className="container">
         <div className={s.row}>
-          <Nav />
+          <Nav data={props.data.sideBar} />
           <div className={s.main_content}>
             <Routes>
               <Route

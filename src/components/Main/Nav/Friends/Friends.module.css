@@ -1,0 +1,38 @@
+.friends {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  color: #fff;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend {
+  display: flex;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.friend::before {
+  content: "";
+  background-image: url("https://preview.redd.it/tzow8ak8z7e81.jpg?auto=webp&s=2c00f15774b82a8c06c9cba7377c89a04bf7cbea");
+  position: absolute;
+  left: 0;
+  top: -4px;
+  background-size: 35px 35px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
