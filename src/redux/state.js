@@ -20,9 +20,9 @@ let state = {
   ],
   messagesData: [
     { id: 1, message: "Hello" },
-    { id: 2, message: "Hi" },
+    { id: 2, message: "Hi", user: true },
     { id: 3, message: "How are you?" },
-    { id: 4, message: "I`m fine" },
+    { id: 4, message: "I`m fine", user: true },
   ],
 };
 

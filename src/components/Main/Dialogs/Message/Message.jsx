@@ -1,7 +1,7 @@
-import s from "./../Dialogs.module.css";
+import ifUser from "./ifUser";
 
 const Message = (props) => {
-  return <div className={s.message}>{props.message}</div>;
+  return ifUser(props);
 };
 
 export default Message;

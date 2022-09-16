@@ -7,7 +7,7 @@ const Dialogs = (props) => {
   ));
 
   let messagesElements = props.messagesData.map((el) => (
-    <Message message={el.message} id={el.id} />
+    <Message message={el.message} id={el.id} user={el.user} />
   ));
 
   return (

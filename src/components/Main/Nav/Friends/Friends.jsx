@@ -1,7 +1,6 @@
 import s from "./Friends.module.css";
 
 const Friends = (props) => {
-  console.log(props);
   return (
     <div className={s.friends}>
       <div className={s.title}>Friends</div>
