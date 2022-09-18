@@ -88,9 +88,7 @@ h6 {
 }
 
 /*--------------------*/
-body {
-  background: rgb(255, 246, 208);
-}
+body {}
 
 .wrapper {
   overflow: hidden;
@@ -100,6 +98,6 @@ body {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1400px;
   margin: 0 auto;
 }

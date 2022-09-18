@@ -1,3 +1,5 @@
+import { rerenderEntireTree } from "../render";
+
 let state = {
   sideBar: {
     friendsData: [
@@ -24,6 +26,18 @@ let state = {
     { id: 3, message: "How are you?" },
     { id: 4, message: "I`m fine", user: true },
   ],
+};
+
+export let addPost = (postMessage) => {
+  let newPost = {
+    name: postMessage,
+    age: "32",
+    likes: "67",
+    id: 5,
+  };
+
+  state.postsData.push(newPost);
+  rerenderEntireTree(state);
 };
 
 export default state;

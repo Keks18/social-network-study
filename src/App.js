@@ -6,7 +6,7 @@ const App = (props) => {
   return (
     <div className="wrapper">
       <Header />
-      <Main data={props.data} />
+      <Main data={props.data} addPost={props.addPost} />
     </div>
   );
 };
