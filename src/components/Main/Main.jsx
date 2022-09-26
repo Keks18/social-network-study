@@ -29,7 +29,9 @@ const Main = (props) => {
                 element={
                   <Profile
                     data={props.data.postsData}
+                    newPostText={props.data.newPostText}
                     addPost={props.addPost}
+                    updateNewPostText={props.updateNewPostText}
                   />
                 }
               />

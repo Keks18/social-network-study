@@ -14,6 +14,7 @@ let state = {
     { name: "Alice", age: "21", likes: "33", id: 3 },
     { name: "Alex", age: "56", likes: "44", id: 4 },
   ],
+  newPostText: "Hello its state",
   dialogsData: [
     { id: 1, name: "Max" },
     { id: 2, name: "Alex" },
@@ -28,15 +29,21 @@ let state = {
   ],
 };
 
-export let addPost = (postMessage) => {
+export let addPost = () => {
   let newPost = {
-    name: postMessage,
-    age: "32",
-    likes: "67",
+    name: state.newPostText,
+    age: "0",
+    likes: "0",
     id: 5,
   };
 
   state.postsData.push(newPost);
+  state.newPostText = "";
+  rerenderEntireTree(state);
+};
+
+export let updateNewPostText = (newText) => {
+  state.newPostText = newText;
   rerenderEntireTree(state);
 };
 
