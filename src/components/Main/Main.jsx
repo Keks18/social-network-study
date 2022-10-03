@@ -21,6 +21,9 @@ const Main = (props) => {
                   <Dialogs
                     dialogsData={props.data.dialogsData}
                     messagesData={props.data.messagesData}
+                    addMessage={props.addMessage}
+                    updateNewMessageText={props.updateNewMessageText}
+                    newMessageText={props.data.newMessageText}
                   />
                 }
               />

@@ -10,6 +10,8 @@ const App = (props) => {
         data={props.data}
         addPost={props.addPost}
         updateNewPostText={props.updateNewPostText}
+        addMessage={props.addMessage}
+        updateNewMessageText={props.updateNewMessageText}
       />
     </div>
   );

@@ -27,6 +27,7 @@ let state = {
     { id: 3, message: "How are you?" },
     { id: 4, message: "I`m fine", user: true },
   ],
+  newMessageText: "Hi, what do you want to hear?",
 };
 
 export let addPost = () => {
@@ -44,6 +45,19 @@ export let addPost = () => {
 
 export let updateNewPostText = (newText) => {
   state.newPostText = newText;
+  rerenderEntireTree(state);
+};
+
+export let addMessage = () => {
+  let newMessage = { id: 5, message: state.newMessageText };
+
+  state.messagesData.push(newMessage);
+  state.newMessageText = "";
+  rerenderEntireTree(state);
+};
+
+export let updateNewMessageText = (newMessage) => {
+  state.newMessageText = newMessage;
   rerenderEntireTree(state);
 };
 
