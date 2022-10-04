@@ -19,11 +19,11 @@ const Main = (props) => {
                 path="/dialogs/*"
                 element={
                   <Dialogs
-                    dialogsData={props.data.dialogsData}
-                    messagesData={props.data.messagesData}
+                    dialogsData={props.data.dialogs.dialogsData}
+                    messagesData={props.data.dialogs.messagesData}
                     addMessage={props.addMessage}
                     updateNewMessageText={props.updateNewMessageText}
-                    newMessageText={props.data.newMessageText}
+                    newMessageText={props.data.dialogs.newMessageText}
                   />
                 }
               />
@@ -31,8 +31,8 @@ const Main = (props) => {
                 path="/profile"
                 element={
                   <Profile
-                    data={props.data.postsData}
-                    newPostText={props.data.newPostText}
+                    data={props.data.profile.postsData}
+                    newPostText={props.data.profile.newPostText}
                     addPost={props.addPost}
                     updateNewPostText={props.updateNewPostText}
                   />
