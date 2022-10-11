@@ -1,3 +1,8 @@
+const ADD_POST = "ADD-POST";
+const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
+const ADD_MESSAGE = "ADD-MESSAGE";
+const UPDATE_NEW_MESSAGE_TEXT = "UPDATE-NEW-MESSAGE-TEXT";
+
 let store = {
   state: {
     sideBar: {
@@ -74,9 +79,9 @@ let store = {
     this.rerenderEntireTree(this.state);
   },
   dispatch(action) {
-    if (action.type === "ADD-POST") {
+    if (action.type === ADD_POST) {
       this.addPost();
-    } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+    } else if (action.type === UPDATE_NEW_POST_TEXT) {
       this.updateNewPostText(action.newText);
     } else if (action.type === "ADD-MESSAGE") {
       this.addMessage();
@@ -86,10 +91,15 @@ let store = {
   },
 };
 
-export const addPostActionCreator = () => ({ type: "ADD-POST" });
+export const addPostActionCreator = () => ({ type: ADD_POST });
 export const updateNewPostTextActionCreator = (text) => ({
-  type: "UPDATE-NEW-POST-TEXT",
+  type: UPDATE_NEW_POST_TEXT,
   newText: text,
+});
+export const addMessageActionCreator = () => ({ type: ADD_MESSAGE });
+export const updateNewMessageTextActionCreator = (text) => ({
+  type: UPDATE_NEW_MESSAGE_TEXT,
+  newMessage: text,
 });
 
 export default store;
