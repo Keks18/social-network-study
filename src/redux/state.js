@@ -40,6 +40,10 @@ let store = {
     return this.state;
   },
 
+  subscribe(observer) {
+    this.rerenderEntireTree = observer;
+  },
+
   addPost() {
     let newPost = {
       name: this.state.profile.newPostText,
@@ -69,10 +73,23 @@ let store = {
     this.state.dialogs.newMessageText = newMessage;
     this.rerenderEntireTree(this.state);
   },
-
-  subscribe(observer) {
-    this.rerenderEntireTree = observer;
+  dispatch(action) {
+    if (action.type === "ADD-POST") {
+      this.addPost();
+    } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+      this.updateNewPostText(action.newText);
+    } else if (action.type === "ADD-MESSAGE") {
+      this.addMessage();
+    } else if (action.type === "UPDATE-NEW-MESSAGE-TEXT") {
+      this.updateNewMessageText(action.newMessage);
+    }
   },
 };
+
+export const addPostActionCreator = () => ({ type: "ADD-POST" });
+export const updateNewPostTextActionCreator = (text) => ({
+  type: "UPDATE-NEW-POST-TEXT",
+  newText: text,
+});
 
 export default store;

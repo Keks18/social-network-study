@@ -21,8 +21,7 @@ const Main = (props) => {
                   <Dialogs
                     dialogsData={props.data.dialogs.dialogsData}
                     messagesData={props.data.dialogs.messagesData}
-                    addMessage={props.addMessage}
-                    updateNewMessageText={props.updateNewMessageText}
+                    dispatch={props.dispatch}
                     newMessageText={props.data.dialogs.newMessageText}
                   />
                 }
@@ -33,8 +32,7 @@ const Main = (props) => {
                   <Profile
                     data={props.data.profile.postsData}
                     newPostText={props.data.profile.newPostText}
-                    addPost={props.addPost}
-                    updateNewPostText={props.updateNewPostText}
+                    dispatch={props.dispatch}
                   />
                 }
               />
